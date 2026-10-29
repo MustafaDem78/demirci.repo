@@ -1,18 +1,14 @@
-import com.lagradost.cloudstream3.gradle.CloudstreamExtension 
-import com.android.build.gradle.BaseExtension
-
 buildscript {
     repositories {
         google()
         mavenCentral()
-        // Shitpack repo which contains our tools and dependencies
         maven("https://jitpack.io")
+        maven("https://raw.githubusercontent.com/re-cloudstream/builds-template/master")
     }
 
     dependencies {
         classpath("com.android.tools.build:gradle:7.0.4")
-        // Cloudstream gradle plugin which makes everything work and builds plugins
-        classpath("com.github.recloudstream:gradle:v3.0.1")
+        classpath("com.github.recloudstream:gradle:3.0.1")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
     }
 }
