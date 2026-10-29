@@ -16,6 +16,6 @@ class HDFilmCehennemi : MainAPI() { // all providers must be an instance of Main
 
     // this function gets called when you search for something
     override suspend fun search(query: String): List<SearchResponse> {
-        return listOf<SearchResponse>()
+        return emptyList()
     }
 }
